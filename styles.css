@@ -1,0 +1,67 @@
+body
+{
+	margin: 0;
+	overflow: hidden; /* hide body */
+}
+
+.main  /* main page div */
+{
+	height: 100vh; /* Means the height of this element is equal to 100% of the viewport height */
+	width: 100vw;
+	display: flex; /* To center the element along the cross axis */
+}
+
+aside	/* sidebar */
+{
+	float: left;
+	padding: 10px; /* distance between uploaded images */
+	overflow-x: hidden; /* add a scroll bar */
+}
+aside .thumb
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px 10px 10px;
+	overflow: hidden;
+}
+aside .thumb img
+{
+	position: absolute; /* element displayed absolutely positioned, while other elements are displayed absolutely no positioned */
+	display: block; /* show */
+	height: 100%;
+}
+aside .overlay
+{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	z-index: 2;
+}
+
+#big-photo	/* big-photo - large image loaded on click */
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+#big-photo img
+{
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+#big-photo .description
+{
+	top: 0;
+	left: 0;
+	color: black;
+	background-color: white;
+	position: absolute;
+	padding: 1rem 1rem 0 2rem;
+}
