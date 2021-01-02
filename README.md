@@ -1,5 +1,7 @@
 # Front-end internship task
-Front-End Internship Task for "Visma".
+Front-End Internship Task for "Visma Lietuva".
+
+This task is a gallery with information about photos, where you can switch between them.
 
 ## Installation
 
